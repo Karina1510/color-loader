@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .loader{
+    height: 25px;
+    width: 25px;
+    
+    position: relative;
+
+}
+
+.loader .ball{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.loader .one{
+   left: 0;
+   top: -25px;
+   background: rgb(224, 36, 68);
+   animation: one 1s infinite;
+}
+@keyframes one{
+    50%,100%{
+        top:25px;
+    }
+}
+
+.loader .two{
+   right: -25px;
+   bottom: 0;
+   background: yellow;
+    animation: two 1s infinite;
+}
+@keyframes two{
+    50%,100%{
+        right:25px;
+    }
+}
+
+
+.loader .three{
+   right: 0;
+   bottom:-25px;
+   background: green;
+      animation: three 1s infinite;
+}
+@keyframes three{
+    50%,100%{
+        bottom:25px;
+    }
+}
+
+
+
+.loader .four{
+   left: -25px;
+   bottom: 0;
+   background: purple;
+      animation: four 1s infinite;
+}
+@keyframes four{
+    50%,100%{
+        left:25px;
+    }
+}
+
